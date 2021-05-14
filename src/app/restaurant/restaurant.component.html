@@ -1,0 +1,33 @@
+
+<form [formGroup]="addRestaurent" (ngSubmit)= "createResto()">
+  <div class="form-group">
+    <label>Add New Restaurant</label>
+    <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-------------------------------------------------------------------------------->
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let resto of collection">
+        <td>{{resto.id}}</td>
+        <td>{{resto.name}}</td>
+        <td>
+          <button (click)="deleteResto(resto.id)" class="btn btn-success">
+            Delete 
+          </button>
+          <button (click)="changeValue(no)" class="btn btn-success">
+            Edit 
+          </button>
+          </td>
+      </tr>
+  </tbody>
+</table>

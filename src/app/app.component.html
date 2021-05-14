@@ -1,0 +1,50 @@
+<h1>Restaurent App</h1>
+
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header"></div>
+
+      <ul class="nav navbar-nav">
+        <li>
+          <a
+            (click)="route.displayRoute()"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Admin</a
+          >
+        </li>
+        <li><a routerLink="/user" routerLinkActive="active">User</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<app-admin #route></app-admin>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div style="text-align:center; text-decoration-color: brown;">
+<h1>Restaurant Chaining</h1>
+</div>
+<nav>
+  <a routerLink='/admin' routerLinkActive='' >Admin </a>
+  <a routerLink='/menu' routerLinkActive='' style="margin-left: 10px;">Menu </a>
+  <a routerLink='/restaurant' routerLinkActive=''style="margin-left: 10px;">Restaurant</a>
+  <a routerLink='/user' routerLinkActive=''style="margin-left: 10px;">User</a>
+</nav>-->

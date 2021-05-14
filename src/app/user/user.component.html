@@ -1,0 +1,16 @@
+
+  <table class="table" >
+      <thead>
+        <tr>
+          <th >Id</th>
+          <th >Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let resto of collection">
+            <td>{{resto.id}}</td>
+            <td (click)="handleClick($event)">{{resto.name}}</td>
+          </tr>
+      </tbody>
+    </table>
+  

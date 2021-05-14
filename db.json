@@ -1,0 +1,24 @@
+{
+  "resto": [
+    {
+      "name": "Lalaji Garden Restaurant",
+      "id": 1
+    },
+    {
+      "name": "F.R.I.N.D.S Cafe & Restro",
+      "id": 2
+    },
+    {
+      "name": "CIBO Family Resto",
+      "id": 3
+    },
+    {
+      "name": "The Yellow Plate Cafe & Restro",
+      "id": 3
+    },
+    {
+      "name": "Red Door Cafe & Restro",
+      "id": 3
+    }
+  ]
+}
